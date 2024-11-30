@@ -1,6 +1,7 @@
 {% extends "_base.html" %}
 
 {% block content %}
+    <a href="{% url 'post-new' %}">Nuevo post</a>
     <ul>
         {% for item in post_list %}
             <li>
