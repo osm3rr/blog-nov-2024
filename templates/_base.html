@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #232f3e; /* Color verde oscuro similar al de Amazon */
+        }
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #cccccc; /* Color al pasar el ratón */
+        }
+        .navbar-custom .btn-logout {
+            background-color: #ff9900;
+            border: none;
+            color: white;
+        }
+        .navbar-custom .btn-logout:hover {
+            background-color: #e68a00;
+        }
+    </style>
 </head>
 <body>
-    <a href="{% url 'blog-home' %}"><h1>Blog Nov</h1></a>
 
-    <form method="post" action="{% url 'logout' %}">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="path_to_logo.png" width="30" height="30" alt="Logo"> Mi Empresa
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></
 
-        {% csrf_token %}
-        <input type="submit" value="Logout">
-
-    </form>
-    
-    {% block content %}
-    {% endblock content %}
-</body>
-
-</html>
-
+            {%  %}
